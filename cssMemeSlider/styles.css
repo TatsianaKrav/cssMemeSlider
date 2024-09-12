@@ -1,0 +1,47 @@
+.container {
+    margin: 0 auto;
+    /*     padding: 1.5em 2em; */
+    padding: 1.5em 0;
+    max-width: 70%;
+    background-color: rgb(238, 209, 231);
+}
+
+input {
+    display: none;
+}
+
+.slider {
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    transition: all 1s linear;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+#slide1:checked~.slider .slide {
+    transform: translateX(0);
+}
+
+#slide2:checked~.slider .slide {
+    transform: translateX(-100%);
+}
+
+#slide3:checked~.slider .slide {
+    transform: translateX(-200%);
+}
+
+#slide4:checked~.slider .slide {
+    transform: translateX(-300%);
+}
+
+  
