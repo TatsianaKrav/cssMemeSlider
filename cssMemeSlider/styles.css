@@ -61,3 +61,43 @@ input {
     width: 100%;
     transition: all 1s linear;
 }
+
+.controls {
+    /*расположение!!*/
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.controls li {
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls li label {
+    border-radius: 50%;
+    display: inline-block;
+    width: 70%;
+    height: 70%;
+    background: #fff;
+}
+
+
+.controls li label:hover {
+    background: rgb(252, 175, 234);
+}
+
+#slide1:checked~.controls li:nth-child(1) label,
+#slide2:checked~.controls li:nth-child(2) label,
+#slide3:checked~.controls li:nth-child(3) label,
+#slide4:checked~.controls li:nth-child(4) label {
+    background: rgb(252, 175, 234);
+}
