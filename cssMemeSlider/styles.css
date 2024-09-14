@@ -10,13 +10,16 @@
 
 body {
     background-color: rgb(204, 191, 202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
 }
 
 .container {
     padding-top: 1em;
     font-family: Ubuntu, sans-serif;
     font-size: 1em;
-    margin: 0 auto;
     max-width: 50%;
     background-color: rgb(238, 209, 231);
     padding: 1em 2em;
@@ -68,7 +71,7 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 0;
+    padding-top: 1em;
 }
 
 .texts {
@@ -98,7 +101,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 1s linear;
+    transition: all 0.5s linear;
 }
 
 .controls label span {
@@ -119,7 +122,7 @@ ul {
 }
 
 .controls label:active span {
-    background-color: rgb(140, 85, 192);
+    background-color: rgb(187, 7, 211);
     cursor: pointer;
 }
 
