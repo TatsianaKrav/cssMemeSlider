@@ -14,6 +14,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100dvh;
+    width: 100dvw;
 }
 
 .container {
@@ -23,6 +24,7 @@ body {
     max-width: 50%;
     background-color: rgb(238, 209, 231);
     padding: 1em 2em;
+    box-sizing: border-box;
 }
 
 input {
@@ -140,12 +142,14 @@ ul {
     border: 0.1rem solid rgb(245, 100, 211);
 }
 
-@media screen and (max-width: 885px) {
 
+@media screen and (max-width: 1000px) {
     .container {
-        width: 100%;
+        max-width: 100%;
     }
+}
 
+@media screen and (max-width: 885px) {
     .slider-info {
         flex-direction: column-reverse;
         justify-content: center;
@@ -156,12 +160,4 @@ ul {
     .text {
         text-align: center;
     }
-}
-
-
-@media screen and (max-width: 620px) {
-
-    /* .container {
-        width: 80%;
-    } */
 }
