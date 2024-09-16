@@ -157,7 +157,7 @@ ul {
         gap: 1em;
     }
 
-    .text {
-        text-align: center;
+    .texts {
+        align-self: flex-start;
     }
 }
